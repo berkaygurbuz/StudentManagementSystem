@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3636D732-8DE4-4E71-8ABA-B749B8C8D998}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>studentManagementSystem</RootNamespace>
+    <AssemblyName>studentManagementSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="addCourseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addCourseForm.Designer.cs">
+      <DependentUpon>addCourseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addScore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addScore.Designer.cs">
+      <DependentUpon>addScore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addStudentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addStudentForm.Designer.cs">
+      <DependentUpon>addStudentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="avgScoreByCourse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="avgScoreByCourse.Designer.cs">
+      <DependentUpon>avgScoreByCourse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="editCourseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editCourseForm.Designer.cs">
+      <DependentUpon>editCourseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main.Designer.cs">
+      <DependentUpon>main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="loginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loginForm.Designer.cs">
+      <DependentUpon>loginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="manageCourse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manageCourse.Designer.cs">
+      <DependentUpon>manageCourse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="manageScoreForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manageScoreForm.Designer.cs">
+      <DependentUpon>manageScoreForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="manageStudentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manageStudentForm.Designer.cs">
+      <DependentUpon>manageStudentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="printCourse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="printCourse.Designer.cs">
+      <DependentUpon>printCourse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="printScore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="printScore.Designer.cs">
+      <DependentUpon>printScore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="removeCourseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="removeCourseForm.Designer.cs">
+      <DependentUpon>removeCourseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RemoveScoreForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RemoveScoreForm.Designer.cs">
+      <DependentUpon>RemoveScoreForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="staticsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="staticsForm.Designer.cs">
+      <DependentUpon>staticsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="student.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="studentPrintForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="studentPrintForm.Designer.cs">
+      <DependentUpon>studentPrintForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="updateDeleteStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updateDeleteStudent.Designer.cs">
+      <DependentUpon>updateDeleteStudent.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="addCourseForm.resx">
+      <DependentUpon>addCourseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addScore.resx">
+      <DependentUpon>addScore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addStudentForm.resx">
+      <DependentUpon>addStudentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="avgScoreByCourse.resx">
+      <DependentUpon>avgScoreByCourse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editCourseForm.resx">
+      <DependentUpon>editCourseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loginForm.resx">
+      <DependentUpon>loginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main.resx">
+      <DependentUpon>main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manageCourse.resx">
+      <DependentUpon>manageCourse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manageScoreForm.resx">
+      <DependentUpon>manageScoreForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manageStudentForm.resx">
+      <DependentUpon>manageStudentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="printCourse.resx">
+      <DependentUpon>printCourse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="printScore.resx">
+      <DependentUpon>printScore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="removeCourseForm.resx">
+      <DependentUpon>removeCourseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RemoveScoreForm.resx">
+      <DependentUpon>RemoveScoreForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="staticsForm.resx">
+      <DependentUpon>staticsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="studentPrintForm.resx">
+      <DependentUpon>studentPrintForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updateDeleteStudent.resx">
+      <DependentUpon>updateDeleteStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EntityDeploy Include="Model1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Model1.edmx.diagram">
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Model1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Content>
+    <Content Include="Model1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
